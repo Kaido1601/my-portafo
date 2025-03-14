@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autos - AutoLux Motors</title>
+ 
+    <link rel="shortcut icon" href="img/logo.webp" type="image/webp">
+    <style>
+/* Estilos para la página de Autos */
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background-color: #003366;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Navegación */
+nav {
+    background-color: #004080;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #0055aa;
+    border-radius: 5px;
+}
+#autos {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.car-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.car-box {
+    background-color: #262626;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.car-box:hover {
+    transform: scale(1.05);
+    background-color: #00aaff;
+    color: #222;
+}
+
+.car-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.car-box h3 {
+    font-size: 1.5em;
+    margin-top: 10px;
+    color: #00aaff;
+}
+h3:hover{
+    color: #333;
+}
+
+.car-box p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Nuestros Autos</h1>
+        <p>Explora nuestra selección de vehículos de lujo y alto rendimiento.</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="autos.html">Autos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    
+    <section id="autos">
+        <div class="car-grid">
+            <div class="car-box">
+                <img src="img/lam.jpeg" alt="Auto Deportivo">
+                <h3>Lamborghini Huracán</h3>
+                <p>Un superdeportivo con 640 HP y diseño aerodinámico.</p>
+            </div>
+            <div class="car-box">
+                <img src="img/range.jpeg" alt="Auto SUV">
+                <h3>Range Rover Sport</h3>
+                <p>Lujo, potencia y tecnología en una SUV de élite.</p>
+            </div>
+            <div class="car-box">
+                <img src="img/ford.jpeg" alt="Auto Clásico">
+                <h3>Ford Mustang GT</h3>
+                <p>Un muscle car icónico con un motor V8 potente.</p>
+            </div>
+            <div class="car-box">
+                <img src="img/clases.jpeg" alt="Sedán de Lujo">
+                <h3>Mercedes-Benz Clase S</h3>
+                <p>El máximo lujo y confort en un sedán de alta gama.</p>
+            </div>
+            <div class="car-box">
+                <img src="img/tesla.jpeg" alt="Auto Eléctrico">
+                <h3>Tesla Model S</h3>
+                <p>Innovación y velocidad con tecnología 100% eléctrica.</p>
+            </div>
+            <div class="car-box">
+                <img src="img/488.jpeg" alt="Deportivo Italiano">
+                <h3>Ferrari 488</h3>
+                <p>Un ícono del automovilismo con 670 HP de pura adrenalina.</p>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 AutoLux Motors - Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
