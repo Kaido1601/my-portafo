@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+    display: flex;
+
+}
+.video-fondo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1; /* detrás del contenido */
+    object-fit: cover; /* que cubra toda la pantalla */
+  }
+
+form{
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  background: transparent;
+    width: 300px;
+    text-align: center;
+
+}
+
+input[type="text"]{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background: #fff;
+}
+input[type="number"]{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background: #fff;
+}
+
+input[type="email"]{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background: #fff;
+}
+
+input[type="password"]{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background: #fff;
+}
+
+button[type="submit"]{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background: #28a745;
+    color: #fff;
+    cursor: pointer;
+}
+button[type="submit"]:hover{
+    background: #218838;
+}
+button[type="submit"]:active{
+    background: #1e7e34;
+}
+button[type="submit"]:disabled{
+    background: #6c757d;
+    cursor: not-allowed;
+}
+input:focus {
+    outline: none;
+    box-shadow: 0 0 5px #00aaff;
+    transition: 0.3s ease;
+  }
+  
